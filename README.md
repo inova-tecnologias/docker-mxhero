@@ -37,10 +37,10 @@ cp -rf latest versions/$VERSION
 
 ### TODO
 - Separate components in minimal container images:
-..- Engine
-..- Web
-..- Quarentine
-..- SpamAssassin
-..- ClamAV
-..- Database
+    - Engine
+    - Web
+    - Quarentine
+    - SpamAssassin
+    - ClamAV
+    - Database
  - Create a more granular administration using ENV Vars
