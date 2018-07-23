@@ -1,4 +1,6 @@
 #!/bin/bash
+# SET PANEL ADMIN PASSWORD
+sed -i "s/GLOBAL_ADMIN_PASSWORD/$GLOBAL_ADMIN_PASSWORD/g" data/mxhero.sql
 # # CREATE DATABASES
 /usr/bin/mysql -u root -p$MYSQL_ADMIN_PASSWD -Bse "CREATE DATABASE IF NOT EXISTS attachments"
 /usr/bin/mysql -u root -p$MYSQL_ADMIN_PASSWD -Bse "CREATE DATABASE IF NOT EXISTS mxhero"
