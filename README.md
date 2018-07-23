@@ -22,7 +22,7 @@ If it's a new install of mxgateway, you will need to initialize the database. Fo
 ```sh
 docker run -it -d --rm --volumes-from mxherovolumes \
 -p 80:80/tcp -p 25:25/tcp -p 26:26/tcp \
--e INITDB=1 -e GLOBAL_ADMIN_PASSWORD=myadminpass
+-e INITDB=1 -e GLOBAL_ADMIN_PASSWORD=myadminpass \
 mxhero
 ```
 #### Build
