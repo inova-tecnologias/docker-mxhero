@@ -3,7 +3,7 @@
 MxGateway components dockerized
 
 MxGateway is an email information traffic management tool for companies and ISPs, where you can have real time email use control.
-
+![alt-text](example.gif)
 ### Usage
 Create a stoped container to store the VOLUMES information. This will be used to store the persistent data (Quarentine, MailQueue, and Database):
 ```sh
