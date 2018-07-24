@@ -15,7 +15,10 @@ docker run -it -d --rm --volumes-from mxherovolumes \
 -p 80:80/tcp -p 25:25/tcp -p 26:26/tcp \
 mxhero
 ```
-You may use the ENV var MYNETWORKS to set postfix mynetworks on each run of the container: `... -e MYNETWORKS="10.0.0.0/8 127.0.0.0/8 192.168.0.0/16..."`
+You may use the ENV var MYNETWORKS to set postfix mynetworks on each run of the container:
+```sh
+... -e MYNETWORKS="10.0.0.0/8 127.0.0.0/8 192.168.0.0/16..."
+```
 
 ---
 If it's a new install of mxgateway, you will need to initialize the database. For this you may set the ENV var INITDB=1
